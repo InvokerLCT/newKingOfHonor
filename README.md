@@ -16,7 +16,7 @@ MainClassDiagram:
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/MainClassDiagram.png)
 
 beastClassDiagram:  
-![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/beastClassDiagram.png)
+![image]("D:\honor\newKingOfHonor\beastClassDiagram.png")
 
 GameObjectClassDiagram:  
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/GameObjectClassDiagram.png)
