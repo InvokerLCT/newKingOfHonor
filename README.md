@@ -11,18 +11,18 @@ Certainly not as good as the real King of Glory. The total number of lines of co
 ****
 I upload some class diagrams to help you understand this project easily
 
-MainClassDiagram:  
+**MainClassDiagram:**  
 
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/MainClassDiagram.png)
 
-beastClassDiagram:  
+**beastClassDiagram:**  
 
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/beastClassDiagram.png)
 
-GameObjectClassDiagram:  
+**GameObjectClassDiagram:**  
 
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/GameObjectClassDiagram.png)
 
-GameFrameClassDiagram:  
+**GameFrameClassDiagram:**  
 
 ![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/GameFrameClassDiagram.png)
