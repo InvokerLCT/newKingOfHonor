@@ -9,4 +9,5 @@ Certainly not as good as the real King of Glory. The total number of lines of co
 
 
 ****
-!["D:\honor\newKingOfHonor\beastClassDiagram.png"](img_url)
+
+![D:\honor\newKingOfHonor\beastClassDiagram.png](img_url)
