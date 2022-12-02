@@ -13,16 +13,16 @@ I upload some class diagrams to help you understand this project easily
 
 MainClassDiagram:  
 
-![image](D:\honor\newKingOfHonor\MainClassDiagram.png)
+![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/MainClassDiagram.png)
 
 beastClassDiagram:  
 
-![image](D:\honor\newKingOfHonor\beastClassDiagram.png)
+![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/beastClassDiagram.png)
 
 GameObjectClassDiagram:  
 
-![image](D:\honor\newKingOfHonor\GameObjectClassDiagram.png)
+![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/GameObjectClassDiagram.png)
 
 GameFrameClassDiagram:  
 
-![image](D:\honor\newKingOfHonor\GameObjectClassDiagram.png)
+![image](https://github.com/InvokerLCT/newKingOfHonor/blob/main/GameFrameClassDiagram.png)
