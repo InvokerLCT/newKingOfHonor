@@ -8,6 +8,7 @@ This program is a simple implementation of the King of Glory game.
 Certainly not as good as the real King of Glory. The total number of lines of code exceeds 1000
 
 
+
 ****
 I upload some class diagrams to help you understand this project easily
 
