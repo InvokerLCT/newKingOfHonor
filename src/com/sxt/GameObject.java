@@ -8,7 +8,7 @@ import java.awt.Toolkit;
 import java.util.ArrayList;
 
 import com.sxt.beast.Beast;
-
+//As the parent class of the game
 public abstract class GameObject {
 
 	// 坐标
@@ -42,7 +42,7 @@ public abstract class GameObject {
 	public GameObject(GameFrame gameFrame) {
 		this.gameFrame = gameFrame;
 	}
-
+	//override the Constructor
 	public GameObject(int x, int y, GameFrame gameFrame) {
 		this.x = x;
 		this.y = y;
@@ -163,7 +163,7 @@ public abstract class GameObject {
 	// 绘制元素
 	public abstract void paintSelf(Graphics g);
 
-	// 返回矩形
+	// 返回矩形（方便后续的碰撞检测）
 	public abstract Rectangle getRec();
 
 	/**

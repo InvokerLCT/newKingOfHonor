@@ -9,7 +9,7 @@ public class Background extends GameObject {
 		super(gameFrame);
 		// TODO Auto-generated constructor stub
 	}
-
+    // Toolkit is an abstract class, use getDefaultToolkit() to get this map
 	Image bg = Toolkit.getDefaultToolkit().getImage("img/Map.jpg");
 
     public void paintSelf(Graphics g){
