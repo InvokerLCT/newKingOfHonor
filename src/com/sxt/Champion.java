@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import javax.swing.JButton;
 
+//add gamers，this is an abstract class 
 public abstract class Champion extends GameObject {
 
 	// 移动
@@ -41,7 +42,7 @@ public abstract class Champion extends GameObject {
 			imgs[i] = "img/move/" + i + ".png";
 		}
 	}
-
+	//constructors
 	public Champion(GameFrame gameFrame, int x, int y) {
 		super(gameFrame);
 		setImg("img/stand.png");
@@ -56,6 +57,7 @@ public abstract class Champion extends GameObject {
 		championList.add(new ChampionHouyi(gameFrame));
 	}
 	
+	//constructors
 	public Champion(GameFrame gameFrame) {
 		// TODO Auto-generated constructor stub
 		super(gameFrame);
@@ -166,6 +168,7 @@ public abstract class Champion extends GameObject {
 	public abstract void abilityThree();
 	public abstract void abilityEffect(Graphics g);
 	
+	//inherited methods
 	@Override
 	public void paintSelf(Graphics g) {
 		// TODO Auto-generated method stub
@@ -181,19 +184,25 @@ public abstract class Champion extends GameObject {
 			g.drawImage(abilityOne, getX() + 360, getY() + 180, null);
 			g.drawImage(abilityTwo, getX() + 400, getY() + 40, null);
 			g.drawImage(abilityThree, getX() + 520, getY() - 30, null);
+			
 			// 绘制图片
+			//The rectangle and the image almost coincide, we can also translate the image in this way.
 			g.drawImage(this.getImg(), getX() - 33, getY() - 50, null);
+			/* We print a small dot at the hero's coordinates
+			 (This dot is for debugging purposes and will eventually be removed)
 			// 改变画笔颜色
 			//g.setColor(Color.GREEN);
 			// 绘制中心圆点
 			//g.fillOval(getX(), getY(), 10, 10);
 			// 绘制矩形边框
 			//g.drawRect(getX() - 23, getY() - 50, 60, 120);
+			 */
 			move();
 			abilityEffect(g);
 		}
 	}
 
+	//inherited methods
 	@Override
 	public Rectangle getRec() {
 		// TODO Auto-generated method stub
