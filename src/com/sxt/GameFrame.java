@@ -157,19 +157,20 @@ public class GameFrame extends JFrame {
 		GameFrame gameFrame = new GameFrame();
 		gameFrame.launch();
 	}
-
+	
 	// 键盘事件
 	private class KeyMonitor extends KeyAdapter {
 		@Override
+		//will be called only when the keyboard is pressed
 		public void keyPressed(KeyEvent e) {
-			int key = e.getKeyCode();
-			player.keyPressed(e);
+			int key = e.getKeyCode(); //get the key value of the key that was pressed
+			player.keyPressed(e); //call the player's keyboard event in the game interface
 		}
-
 		@Override
+		//will be called only when the keyboard is released.
 		public void keyReleased(KeyEvent e) {
-			int key = e.getKeyCode();
-			player.keyReleased(e);
+			int key = e.getKeyCode(); //get the key value of the key that was pressed
+			player.keyReleased(e);  //call the player's keyboard event in the game interface
 		}
 	}
 }

@@ -15,7 +15,7 @@ import javax.swing.JButton;
 public abstract class Champion extends GameObject {
 
 	// 移动
-	public boolean up, down, left, right;
+	public boolean up, down, left, right; //identity 4 directions
 	// 移动图集
 	static String[] imgs = new String[8];
 	// 第几张图片
