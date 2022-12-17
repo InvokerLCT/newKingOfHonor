@@ -28,13 +28,13 @@ public class MinionBlue extends Minion {
 		} else {
 			findTarget(objList);
 			// 原路线移动
-			if (getX() < 4425) {
+			if (getX() < 4425) { //first phase
 				setSpd(25);
 				if (!hitMinion(getX() + getSpd(), getY(), gameFrame.blueList)) {
 					setX(getX() + getSpd());
 
 				}
-			} else if (getX() < 5100 && getX() >= 4425) {
+			} else if (getX() < 5100 && getX() >= 4425) { //second phase
 				setSpd(20);
 				if (!hitMinion(getX() + getSpd(), getY(), gameFrame.blueList)) {
 					setX(getX() + getSpd());
@@ -42,7 +42,7 @@ public class MinionBlue extends Minion {
 				if (!hitMinion(getX(), getY() - getSpd(), gameFrame.blueList)) {
 					setY(getY() - getSpd());
 				}
-			} else if (getX() >= 4900) {
+			} else if (getX() >= 4900) {//third phase
 				setSpd(18);
 				if (!hitMinion(getX(), getY() - getSpd(), gameFrame.blueList)) {
 					setY(getY() - getSpd());

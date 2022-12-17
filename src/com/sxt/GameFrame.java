@@ -103,9 +103,11 @@ public class GameFrame extends JFrame {
 	}
 
 	public void paint(Graphics g) {
+		//When it is an empty image, operate this to it.
 		if (offScreenImage == null) {
 			offScreenImage = this.createImage(5984, 4452);
 		}
+		//get the brush for that image
 		Graphics gImage = offScreenImage.getGraphics();
 		if (state == 0) {
 			for(int i = 0; i < champion.championList.size(); i++) {
@@ -144,7 +146,7 @@ public class GameFrame extends JFrame {
 		if (state != 1) {
 			g.drawImage(offScreenImage, 0, 0, null);
 		} else {
-			g.drawImage(offScreenImage, -player.getX() + 700, -player.getY() + 350, null);
+			g.drawImage(offScreenImage, -player.getX() + 700, -player.getY() + 350, null); //The hero is in the center
 		}
 		/**
 		 * 添加按钮后不能调用键盘事件 因为程序的焦点变成了按钮 this.requestFocus() 把焦点重新改变到游戏界面上
