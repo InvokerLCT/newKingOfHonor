@@ -96,7 +96,7 @@ public abstract class Minion extends GameObject {
 				minionCount++;
 				new NextMinion().start();
 			}
-			if (minionCount == 3) {
+			if (minionCount == 3) { //When the number of minions is 3, a new thread starts.
 				minionCount = 0;
 				new NextLine().start();
 			}

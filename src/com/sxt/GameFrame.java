@@ -63,7 +63,7 @@ public class GameFrame extends JFrame {
 		setVisible(true);
 		// 添加键盘监视器
 		this.addKeyListener(new GameFrame.KeyMonitor());
-		// 添加游戏元素
+		// 添加游戏元素 （cannot change the order）
 		objList.add(background);
 		objList.addAll(turret.turretList);
 		objList.addAll(beast.beastList);
