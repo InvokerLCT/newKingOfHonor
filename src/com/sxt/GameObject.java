@@ -53,12 +53,16 @@ public abstract class GameObject {
 		// TODO Auto-generated constructor stub
 	}
 
+	/*
+	 * the first argument is the brush to draw health with, the second and third are the position of the Hp, 
+	 * and the fourth and fifth are the height and width of the Hp. The last one is the color of Hp.
+	 */
 	public void addHp(Graphics g, int difX, int difY, int width, int height, Color color) {
 		// 绘制外部轮廓
 		g.setColor(Color.black);
 		g.drawRect(getX() - difX, getY() - difY, width, height);
 		// 填充矩形
-		g.setColor(color);
+		g.setColor(color); //Change the brush color
 		g.fillRect(getX() - difX, getY() - difY, (int) (width * getCurrentHp() / getHp()), height);
 	}
 

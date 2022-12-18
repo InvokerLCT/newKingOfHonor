@@ -49,6 +49,7 @@ public class Bullet extends GameObject {
 			target.setCurrentHp(target.getCurrentHp() - getAd());
 			gameFrame.removeList.add(this);
 		}
+		//Orthogonal decomposition of trigonometric functions is used
 		double dis = getDis(getX(), getY(), target.getX(), target.getY());
 		int xSpeed = (int) (getSpd() * (target.getX() - getX()) / dis);
 		int ySpeed = (int) (getSpd() * (target.getY() - getY()) / dis);

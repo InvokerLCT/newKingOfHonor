@@ -22,6 +22,9 @@ public class Turret extends GameObject {
 		setImg("img/turret.png");
 
 		// 初始化八个防御塔
+		/*The first four are blue squares, and the last four are red squares, 
+		  which need to be added to the corresponding list in GameFrame
+		*/
 		turretList.add(turretBlueOne = new TurretBlue(1860, 3790, gameFrame));
 		turretList.add(turretBlueTwo = new TurretBlue(2650, 3820, gameFrame));
 		turretList.add(turretBlueThree = new TurretBlue(3995, 3830, gameFrame));
