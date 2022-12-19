@@ -66,6 +66,7 @@ public abstract class GameObject {
 		g.fillRect(getX() - difX, getY() - difY, (int) (width * getCurrentHp() / getHp()), height);
 	}
 
+	//calculate the distance between the bullet and the target
 	public double getDis(int x1, int y1, int x2, int y2) {
 		return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
 	}
@@ -75,6 +76,7 @@ public abstract class GameObject {
 		return r1.intersects(r2);
 	}
 
+	//矩形和圆形的碰撞检测
 	public boolean recIntersectsCir(Rectangle rec, int x, int y, int r) {
 		/** 矩形于圆相交： 圆心到至少一个矩形定点的距离小于r */
 		if ((getDis(x, y, rec.x, rec.y) < r) || (getDis(x, y, rec.x, rec.y + rec.height) < r)
@@ -102,7 +104,8 @@ public abstract class GameObject {
 					bullet = new Bullet(gameFrame, this, getTarget(), 500, 50);
 				}
 				// 小兵攻击
-				else if (Minion.class.isAssignableFrom(getClass())) {
+				//getclass () method is used to check if the following class is a subclass of the preceding class
+				else if (Minion.class.isAssignableFrom(getClass())) { 
 					bullet = new Bullet(gameFrame, this, getTarget(), 50, 30);
 				}
 				// 玩家攻击

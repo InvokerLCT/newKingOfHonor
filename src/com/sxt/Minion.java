@@ -148,7 +148,7 @@ public abstract class Minion extends GameObject {
 				gameFrame.redList.remove(this);
 			}
 		} else {
-			// 添加生命值
+			// Minion Hp
 			if (this instanceof MinionBlue) {
 				this.addHp(g, 17, 28, 45, 10, Color.GREEN);
 			} else {

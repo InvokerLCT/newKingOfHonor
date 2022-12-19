@@ -178,7 +178,7 @@ public abstract class Champion extends GameObject {
 			gameFrame.removeList.add(this);
 
 		} else {
-			// 添加生命值
+			// Champion Hp
 			addHp(g, 30, 80, 80, 20, Color.GREEN);
 			//绘制技能图片
 			g.drawImage(abilityOne, getX() + 360, getY() + 180, null);

@@ -98,7 +98,7 @@ public class Turret extends GameObject {
 				gameFrame.redList.remove(this);
 			}
 		} else {
-			// 添加生命值
+			// Turret Hp
 			if (this instanceof TurretBlue) {
 				this.addHp(g, 50, 130, 100, 20, Color.GREEN);
 				attack(gameFrame.redList);
