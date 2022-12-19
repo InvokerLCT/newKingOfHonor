@@ -139,6 +139,8 @@ public abstract class Minion extends GameObject {
 	public void paintSelf(Graphics g) {
 		// TODO Auto-generated method stub
 		// 生命值为0
+		//When Hp is 0, we assign it to ‘false’ and then add it to the game's delete list.
+		//we also need judge the minion is red or blue
 		if (getCurrentHp() <= 0) {
 			setAlive(false);
 			gameFrame.removeList.add(this);

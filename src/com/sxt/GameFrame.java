@@ -72,6 +72,7 @@ public class GameFrame extends JFrame {
 
 		/**
 		 * 攻击按钮
+		 * Note that the coordinates here are its position on the window
 		 */
 		attackButton = new JButton();
 		attackButton.setSize(130, 132);
