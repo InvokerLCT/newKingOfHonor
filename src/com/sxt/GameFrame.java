@@ -111,6 +111,7 @@ public class GameFrame extends JFrame {
 		//get the brush for that image
 		Graphics gImage = offScreenImage.getGraphics();
 		if (state == 0) {
+			//choose Champion first when state = 0
 			for(int i = 0; i < champion.championList.size(); i++) {
 				//添加图片
 				Image classical = champion.championList.get(i).classical;

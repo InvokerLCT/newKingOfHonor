@@ -19,7 +19,7 @@ public class ChampionHouyi extends Champion {
 	// 技能是否处于释放状态
 	boolean ifAbilityThree = false;
 	boolean ifAbilityTwo = false;
-	// 鼠标监视器
+	// 鼠标监视器（Initialize the mouse monitor and don't forget to add it to the game interface）
 	MouseMonitor m;
 	MouseMonitorTwo m2;
 	// 三技能多边形
@@ -343,7 +343,7 @@ public class ChampionHouyi extends Champion {
 
 	}
 
-	// 鼠标监视器
+	// 鼠标监视器（Second skill）
 	private class MouseMonitorTwo extends MouseAdapter {
 		@Override
 		public void mousePressed(MouseEvent e) {// 当鼠标点击时

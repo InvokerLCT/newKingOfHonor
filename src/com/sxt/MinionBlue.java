@@ -36,6 +36,7 @@ public class MinionBlue extends Minion {
 				}
 			} else if (getX() < 5100 && getX() >= 4425) { //second phase
 				setSpd(20);
+				//Since we return true whenever we collide, we must add ’!’(false).
 				if (!hitMinion(getX() + getSpd(), getY(), gameFrame.blueList)) {
 					setX(getX() + getSpd());
 				}
@@ -44,6 +45,7 @@ public class MinionBlue extends Minion {
 				}
 			} else if (getX() >= 4900) {//third phase
 				setSpd(18);
+				//Since we return true whenever we collide, we must add ’!’(false).
 				if (!hitMinion(getX(), getY() - getSpd(), gameFrame.blueList)) {
 					setY(getY() - getSpd());
 				}

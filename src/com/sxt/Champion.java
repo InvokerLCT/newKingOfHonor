@@ -158,6 +158,7 @@ public abstract class Champion extends GameObject {
 				abilityThree();
 			}
 		});
+		//adding these three buttons to the game frame.
 		gameFrame.add(button1);
 		gameFrame.add(button2);
 		gameFrame.add(button3);

@@ -49,7 +49,8 @@ public class ChampionDaji extends Champion {
 	public void exit() {
 		this.gameFrame.removeMouseListener(m);
 	}
-
+	
+    //It's essentially a rectangle moving
 	public void abilityOneMove() {
 		p.translate((int) (50 * cos), -(int) (50 * sin));
 		for (GameObject redObj : gameFrame.objList) {
@@ -87,6 +88,7 @@ public class ChampionDaji extends Champion {
 				if ((redObj instanceof MinionRed || Beast.class.isAssignableFrom(redObj.getClass())) && recIntersectsCir(redObj.getRec(), getX(), getY(), 250)
 						&& redObj.isAlive()) {
 					// 添加子弹
+					//adding an extra parameter to the bullet picture
 					abilityTwoBullet = new Bullet(gameFrame, this, redObj, 250, 60, "img/Daji/abilityTwoBullet.png");
 					gameFrame.objList.add(abilityTwoBullet);
 					// 给目标赋值
@@ -230,7 +232,6 @@ public class ChampionDaji extends Champion {
 			abilityTwoTarget.beControlled = false;
 			this.stop();
 		}
-
 	}
 	// 技能三冷却时间
 	class AbilityThreeCD extends Thread {
@@ -277,8 +278,10 @@ public class ChampionDaji extends Champion {
 	}
 
 	// 鼠标监视器
+	//inner class
 	private class MouseMonitor extends MouseAdapter {
 		@Override
+		//Add mouse event
 		public void mousePressed(MouseEvent e) {// 当鼠标点击时
 			int mouseX = e.getX(), mouseY = e.getY(), playerX = 700, playerY = 350;
 			double dis = getDis(mouseX, mouseY, playerX, playerY);
@@ -294,6 +297,7 @@ public class ChampionDaji extends Champion {
 			p.addPoint(getX() - difX + (int) (20 * cos), getY() - difY - (int) (20 * sin));
 			exit();
 			new AbilityOneCD().start();
+			//When the mouse is clicked, the first skill is launched
 			ifAbilityOne = true;
 		}
 	}
