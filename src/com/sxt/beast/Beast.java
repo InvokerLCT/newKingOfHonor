@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import com.sxt.*;
 
 public class Beast extends GameObject {
-
+    
+	//beast list
 	public ArrayList<Beast> beastList = new ArrayList<Beast>();
 	int width;
 	int height;
@@ -43,7 +44,8 @@ public class Beast extends GameObject {
 		initialY = getY();
 		beast = this;
 	}
-
+	
+	//A method of moving towards a target
 	public void moveToTarget() {
 		double dis = getDis(getX(), getY(), getTarget().getX(), getTarget().getY());
 		if (dis > 500) {
@@ -57,6 +59,7 @@ public class Beast extends GameObject {
 		}
 	}
 
+	//the method to move to the birthplace
 	public void moveToInitialLocation() {
 		double dis = getDis(getX(), getY(), initialX, initialY);
 		if (dis < getSpd()) {
@@ -138,12 +141,13 @@ public class Beast extends GameObject {
 			this.stop();
 		}
 	}
-
+	
+	//create a new thread to calculate the resurrection time of the beast.
 	class ReviveCD extends Thread {
 		public void run() {
 			// 线程休眠
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(5000); //Set the sleep time to 5s
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
