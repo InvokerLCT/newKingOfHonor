@@ -253,6 +253,7 @@ public abstract class GameObject {
 	/**
 	 * @param currentHp the currentHp to set
 	 */
+	//beast as a neutral creature does not automatically seek targets. 
 	public void setCurrentHp(int currentHp) {
 		if (currentHp < getHp()) {
 			if (Beast.class.isAssignableFrom(getClass())) {
